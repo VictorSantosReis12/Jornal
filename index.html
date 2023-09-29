@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1><img id="logo" src="./assests/ALL_branco-png.png" alt="logo"></h1></a>
+    </header>
+    <main>
+        <h2>Principais Notícias</h2>
+        <section id="container_section">
+            <div id="primeira_section">
+                <div class="slider">
+                    <div class="slide active imagens-slider">
+                        <img src="./assests/impossible_resized.jpg" alt="impossible burger">
+                        <span class="slide-text">Food Tech: Impossible Burger</span>
+                        <a class="slide-link" href="foodtech.html">Abrir Notícia</a>
+                    </div>
+                    <div class="slide imagens-slider">
+                        <img src="./assests/coliseu_resized.jpg" alt="coliseu">
+                        <span class="slide-text">Esportes</span>
+                        <a class="slide-link" href="esportes.html">Abrir Notícia</a>
+                    </div>
+                    <div class="slide imagens-slider">
+                        <img src="./assests/meditacao_resized.jpg" alt="meditação">
+                        <span class="slide-text">Meditação</span>
+                        <a class="slide-link" href="meditacao.html">Abrir Notícia</a>
+                    </div>
+                </div>
+
+                <div id="botoes">
+                    <button onclick="prevSlide()">&lt;</button>
+                    <button onclick="nextSlide()">&gt;</button>
+                    <script src="script.js"></script>
+                </div>
+            </div> 
+
+            <a href="saude.html">
+                <div id="segunda_section">
+                    <h3 class="segundo-h3">Saúde e Alimentação</h3>
+                    <img src="" alt="">
+                    <p class="p-secoes">A saúde e alimentação são dois aspectos fundamentais da vida humana. Juntos, determinam em grande parte o nosso bem-estar físico e mental. Nesta seção, abordamos tópicos que refletem a importância de manter uma vida saudável e como as escolhas alimentares influenciam diretamente a nossa saúde.</p>
+                </div>
+            </a>
+
+            <a href="filosofia.html">
+                <div id="terceira_section">
+                    <h3 class="terceiro-h3">Filosofia, Psicologia e Neurociência</h3>
+                    <img src="" alt="">
+                    <p class="p-secoes">A intersecção entre a filosofia e a neurociência oferece percepções profundas sobre o funcionamento da mente e nosso entendimento sobre a realidade. Aqui, exploramos como o pensamento filosófico se entrelaça com as descobertas científicas do cérebro e como essa união pode lançar luz sobre os mistérios da consciência.</p>
+                </div>
+            </a>
+
+            <a href="jornal.html">
+                <div id="quarta_section">
+                    <h3 class="quarto-h3">ALL-IN Jornal</h3>
+                    <img src="" alt="">
+                    <p class="p-secoes">"All-In Jornal" é o coração pulsante do nosso portal, trazendo as atualidades e tendências mais relevantes do momento. Abrangendo uma ampla gama de tópicos, esta seção é dedicada a informar, educar e engajar nossos leitores nos assuntos que moldam o mundo atual.</p>
+                </div>
+            </a>
+
+        </section>
+    </main>
+    <footer id="container_footer">
+        <div class="div_footer">
+            <p class="texto_footer">Autores:</p>
+            <p class="texto_footer">Bernardo Biazeto</p>
+            <p class="texto_footer">Gabriel Ribeiro</p>
+            <p class="texto_footer">Murilo Bissoloti</p>
+            <p class="texto_footer">Pedro Henrique</p>
+            <p class="texto_footer">Victor Santos</p>
+        </div>
+        <div class="div_footer">
+            <img id="logo_baixo" src="./assests/ALL_branco-png.png" alt="logo">
+            <p class="texto_footer">© 2000 - 2023 All-In S.A.</p>
+        </div>
+        <div class="div_footer">
+            <div class="icon-div">
+                <img class="icon" src="./assests/whats-png.png" alt="whats">
+                <p class="texto_footer">99999-9999</p>
+            </div>
+            <div class="icon-div">
+                <img class="icon" src="./assests/insta-png.png" alt="instagram">
+                <p class="texto_footer">@All-InJornal</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

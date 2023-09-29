@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#logo {
+    height: 30vh;
+    width: auto;
+    margin-top: -5vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+a:hover{
+    transform: scale(1.05);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jornal-h2{
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5px;
+}
+.saude-h2{
+    font-size: 30px;
+    background-color: rgb(5, 187, 5);
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5px;
+}
+.filosofia-h2{
+    font-size: 30px;
+    background-color: rgb(179, 11, 212);
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5px;
+}
+
+.secao-jornal{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 15% 15% 15% 15% 15% 15%;
+    grid-template-areas: 
+        "ia ia anuncio"
+        "poema aquecimento aquecimento"
+        "charge design design"
+        "coluna coluna coluna"
+        "coluna coluna coluna"
+        "estresse estresse estresse";
+    grid-column-gap: 5.5rem;
+    grid-row-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-ia{
+    grid-area: ia;
+}
+
+#div-anuncio{
+    grid-area: anuncio;
+}
+
+#div-poema{
+    grid-area: poema;
+}
+
+#div-aquecimento{
+    grid-area: aquecimento;
+}
+
+#div-charge{
+    grid-area: charge;
+}
+
+#div-design{
+    grid-area: design;
+}
+
+#div-coluna{
+    grid-area: coluna;
+    background-color: rgb(74, 25, 5);
+    flex-direction: column;
+    justify-content: center;
+}
+
+#div-estresse{
+    grid-area: estresse;
+}
+
+
+.container-div,
+.container-div-jornal,
+.container-div-jornal-anuncio{
+    border: 3px solid black;
+    margin-top: 50px;
+    display: flex;
+    width: 250px;
+    padding: 2px;
+    border-radius: 10px;
+    gap: 1rem;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.container-div{
+    width: 800px;
+    padding: 10px;
+    gap: 3rem;
+}
+
+.container-div-jornal{
+    width: auto;
+}
+
+.container-div-jornal-anuncio{
+    width: 350px;
+}
+
+.container-div,.container-div-jornal,.container-div-jornal-anuncio,.container-div-jornal-coluna:hover{
+    transform: scale(1.002);
+}
+
+.container-div-poema{
+    gap: 0;
+    border: 3px solid black;
+    margin-top: 50px;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.container-div-charge{
+    border: 3px solid black;
+    margin-top: 50px;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center;
+    width: 800px;
+}
+
+.texto-div>p {
+    width: 250px;
+}
+
+.texto-div-jornal>p{
+    width: 110px;
+}
+
+.texto-div-jornal-ia>p{
+    width: 300px;
+}
+
+.texto-div-jornal-anuncio>p{
+    width: 100px;
+}
+
+.texto-div-jornal-charge>p{
+    width: 90px;
+}
+
+.texto-div-jornal-coluna>p{
+    width: 625px;
+}
+
+p{
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.botoes_poemas{
+    border: solid 1px blue;
+    border-radius: 20px;
+    color: blue;
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.botoes_poemas:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.05)
+}
+
+.container-div-jornal-coluna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+#texto-coluna{
+    color: white;
+}
+
+.texto-div-poema{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container-div-charge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#operarios{
+    margin-top: 30px;
+}
+
+.texto-div-charge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.estrofe{
+    margin-top: 20px;
+    width: 400px;
+}
+
+.autores{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.texto-div-jornal-estresse>p{
+    width: 625px;
+}
+
+#container_footer {
+    background-color: black;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+#logo_baixo {
+    height: 30vh;
+    margin-bottom: -5vh;
+}
+
+.div_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 3vh;
+    margin-right: 20px;
+}
+
+.icon-div{
+    display: flex;
+    margin-top: 30px;
+}
+
+.texto_footer {
+    color: white;
+}

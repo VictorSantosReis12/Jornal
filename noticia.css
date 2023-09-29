@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#logo {
+    height: 30vh;
+    width: auto;
+    margin-top: -5vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+a:hover{
+    transform: scale(1.05);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.saude-h2{
+    font-size: 30px;
+    background-color: rgb(5, 187, 5);
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5px;
+}
+
+.jornal-h2{
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5px;
+}
+
+.filosofia-h2{
+    font-size: 30px;
+    background-color: rgb(179, 11, 212);
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5px;
+}
+
+.texto-noticia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 14px;
+    text-align: center;
+}
+
+.autores{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#container_footer {
+    background-color: black;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+#logo_baixo {
+    height: 30vh;
+    margin-bottom: -5vh;
+}
+
+.div_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 3vh;
+    margin-right: 20px;
+}
+
+.icon-div{
+    display: flex;
+    margin-top: 30px;
+}
+
+.texto_footer {
+    color: white;
+}
