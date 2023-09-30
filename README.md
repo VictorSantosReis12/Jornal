@@ -1,6 +1,6 @@
 # jornal
 
-Link do site:
+Link do site: https://victorsantosreis12.github.io/Jornal/
 
 Documentação do Jornal Digital "All-In"
 
